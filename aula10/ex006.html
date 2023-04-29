@@ -19,30 +19,29 @@
 </head>
 <body>
     <div id="area">
+        
         Interaja...
     </div>
 
     <script>
-        area.addEventListener('click', clicar)
-        area.addEventListener('mouseenter', entrar)
-        area.addEventListener('mouseout', sair)
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
 
         function clicar (){
-            var area = document.getElementById('area')
-            area.innerText = 'Clicou!'
-            area.style.background = 'red'
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
         }
 
         function entrar() {
-            var area = document.getElementById('area')
-            area.innerText = 'Entrou!'
-            area.style.background = 'blue'
+            a.innerText = 'Entrou!'
+            a.style.background = 'blue'
         }
 
         function sair() {
-            var area = document.getElementById('area')
-            area.innerText = 'Saiu!'
-            area.style.background = 'green'
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
         }
     </script>
 </body>
