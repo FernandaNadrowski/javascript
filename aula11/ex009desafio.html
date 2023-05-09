@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde você mora?</title>
+</head>
+<body>
+    <h1>Em qual país você mora?</h1>
+    Digite aqui onde você mora: <input type="text" name="país" id="país">
+    <input type="button" value="Verificar local" onclick="calcular()">
+    <div id="resultado"></div>
+
+    <script>
+        
+        function calcular() {
+        var local = document.querySelector('input#país')
+        var resultado = document.querySelector('div#resultado')
+        var moradia = (país.value)
+
+        resultado.innerHTML = `<p>Você mora em ${moradia}, então você é:` 
+        if (moradia == 'Brasil') {
+            resultado.innerHTML += `brasileiro`
+        } else {
+            resultado.innerHTML += 'estrangeiro'
+        }
+
+        }
+    </script>
+</body>
+</html>
