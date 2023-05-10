@@ -5,7 +5,6 @@ function verificar() {
     var res = document.getElementById('res')
 
     if (fano.value.length == 0 || fano.value > ano) {
-        //fano.style.background = "#FF0000"
         alert(`[ERRO] Verifique os dados e tente novamente!`) 
     } else {
         var fsex = document.getElementsByName('radsex')
@@ -25,7 +24,7 @@ function verificar() {
                 //jovem homem
                 img.setAttribute('src', 'homemjovem.png')
 
-            } else if (idade >=36 && idade < 50) {
+            } else if (idade >=36 && idade < 55) {
                 //homem adulto
                 img.setAttribute('src', 'homem.png')
             } else {
@@ -46,7 +45,7 @@ function verificar() {
                     //jovem mulher
                     img.setAttribute('src', 'mulherjovem.png')
     
-                } else if (idade >=36 && idade < 50) {
+                } else if (idade >=36 && idade < 55) {
                     //mulher adulta
                     img.setAttribute('src', 'mulher.png')
                 } else {
